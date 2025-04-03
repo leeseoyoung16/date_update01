@@ -19,9 +19,9 @@ public class BasicController {
         return "index.html";
     }
 
-    @GetMapping("/data")
+    @GetMapping("/date")
     @ResponseBody
-    String data(){
+    String date(){
         LocalDateTime now = LocalDateTime.now();
         return "Date: " + now.toLocalDate() + "<br>" + "Time: " + now.toLocalTime();
 
